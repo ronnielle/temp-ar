@@ -3,15 +3,9 @@
 
 
 <body >
-<!-- <h1>foo</h1> -->
-	<!-- <a-scene> -->
-    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-    <a-assets>
-      <a-asset-item id="o1" src="Tabulamtl.obj"></a-asset-item>
-      <a-asset-item id="o1m" src="Tabulamtl.mtl"></a-asset-item>
-    </a-assets>        
-		<a-marker  type='pattern' url='p1.patt'>
-        <a-entity position='-0.1 1.2 -1' scale='0.01 0.01 0.01'  obj-model="obj: #o1;"></a-entity>                
+    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>        
+		<a-marker  type='pattern' url='p.patt'>
+        <a-entity position='-0.1 1.2 -1' scale='0.01 0.01 0.01'   obj-model="obj: url(Tabulamtl.obj); mtl: url(Tabulamtl.mtl)"></a-entity>                
     </a-marker>
     
 		
